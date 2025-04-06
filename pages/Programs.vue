@@ -34,7 +34,7 @@
     {
       id: 'online-basic',
       title: 'BASIC',
-      price: '€45 / mesečno',
+      price: '€50 / mesečno',
       features: [
         { name: 'Plan u PDF-u', available: true },
         { name: 'Plan u aplikaciji', available: false },
@@ -113,12 +113,13 @@
   }
   
   .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #e76f51;
+    color: #80CED6;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    text-shadow: 2px 2px #5399a1;
   }
   
   .plans-wrapper {

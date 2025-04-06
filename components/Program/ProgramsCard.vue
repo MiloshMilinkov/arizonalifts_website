@@ -55,7 +55,7 @@ function goToDocs(url) {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #e76f51;
+    color: #80CED6;
   }
 
   .plan-features {
@@ -87,7 +87,7 @@ function goToDocs(url) {
     position: absolute;
     top: -5px;
     left: -10px;
-    background-color: #f4a261;
+    background-color: #FFB6C1;
     color: #fff;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;

@@ -1,117 +1,159 @@
 <template>
-    <nav class="navbar">
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <h1>ARIZONA<span>LIFTS</span></h1>
+    </div>
+
+    <div class="navbar-desktop">
       <div class="navbar-links">
         <NuxtLink to="/" class="nav-link">Početna</NuxtLink>
-        <div class="dropdown" @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
-          <NuxtLink to="/programs" class="nav-link">Programi</NuxtLink>
-          <div class="dropdown-menu" v-if="showDropdown">
-            <NuxtLink to="/programs" class="dropdown-item">Trening</NuxtLink>
-            <NuxtLink to="/nutrition" class="dropdown-item">Ishrana</NuxtLink>
-          </div>
-        </div>
+        <NuxtLink to="/programs" class="nav-link">Programi</NuxtLink>
+        <NuxtLink to="/about" class="nav-link">O Meni</NuxtLink>
+        <NuxtLink to="/contact" class="nav-link">Kontakt</NuxtLink>
       </div>
-      <div class="navbar-logo">
-        <h1>ARIZONA<span>LIFTS</span></h1>
+    </div>
+
+    <div class="navbar-mobile">
+      <div class="hamburger" @click="toggleMobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="navbar-links">
-        <NuxtLink to="/" class="nav-link">O Meni</NuxtLink>
-        <NuxtLink to="/programs" class="nav-link">Kontakt</NuxtLink>
+      <div class="mobile-menu" v-if="showMobileMenu">
+        <NuxtLink to="/" class="mobile-link">Početna</NuxtLink>
+        <NuxtLink to="/programs" class="mobile-link">Programi</NuxtLink>
+        <NuxtLink to="/about" class="mobile-link">O Meni</NuxtLink>
+        <NuxtLink to="/contact" class="mobile-link">Kontakt</NuxtLink>
       </div>
-    </nav>
+    </div>
+  </nav>
 </template>
 
 <script setup>
-  import { ref } from 'vue';
-    const showDropdown = ref(false);
+  import { ref } from 'vue'
+  const showMobileMenu = ref(false)
+  const toggleMobileMenu = () => {
+    showMobileMenu.value = !showMobileMenu.value
+  }
 </script>
-  
+
 <style scoped>
   .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 99%;
+    width: 100vw;
+    background: #D6D6D6; 
     z-index: 999;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #F4E1D2;
-    padding-top: 1rem;
-    height: 3rem;
-    width: 100vw;
-    gap: 5rem;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.1);
   }
 
+  .navbar-logo h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #80CED6;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  }
   
+  .navbar-logo h1 span {
+    color: #FFB6C1;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  }
+
+  .navbar-desktop {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .navbar-links {
     display: flex;
-    gap: 5rem;
+    gap: 1.5rem;
+    padding-right: 5rem;
   }
-  
+
   .nav-link {
-    color: #f4a261;
+    color: white; 
     text-decoration: none;
-    font-weight: bold;
+    font-weight:bold;
     font-size: 1.2rem;
-    transition: background 0.3s ease, color 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-family: inherit;
-  }
-  
-  .nav-link:hover {
-    color: #e76f51;
-  }
-  
-  .navbar-logo h1 {
-    color: #e76f51;
-    font-size: 2rem;
-    text-shadow: 2px 2px #f4a261;
-    margin: 0;
-  }
-
-  .navbar-logo h1 span{
-    color: #f4a261;
-    font-size: 2rem;
-    text-shadow: 2px 2px #e76f51;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
   }
 
   .nav-link:hover {
-    color: #e76f51;
+    background: #FFB6C1;
+    color: #fff;
   }
 
-  .nav-link.router-link-active {
-    background: linear-gradient(180deg,#F4E1D2 0%,#FADAC3 50%);
-    color: #e76f51;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  .nav-link.router-link-active, .mobile-link.router-link-active  {
+    background: #FFB6C1;
+    color: #fff;
   }
 
-  .dropdown {
-    position: relative;
+  .navbar-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2rem;
   }
 
-  .dropdown-menu {
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background: #80CED6;
+    border-radius: 2px;
+  }
+
+  .mobile-menu {
+    background: #D6D6D6;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: #FADAC3;
-    padding: 0.5rem 0;
+    right: 1rem;
     border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    min-width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    z-index: 998;
   }
 
-  .dropdown-item {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #e76f51;
+  .mobile-link {
+    padding: 0.75rem 1.5rem;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
     transition: background 0.3s ease;
   }
 
-  .dropdown-item:hover {
-    background: #f4a261;
-    color: #fff;
+  @media (max-width: 768px) {
+    .navbar-desktop {
+      display: none;
+    }
+    .navbar-mobile {
+      display: flex;
+    }
+    .navbar-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #80CED6;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    }
+    .navbar-logo h1 span {
+      color: #FFB6C1;
+      text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    }
   }
-  </style>
-  
+</style>

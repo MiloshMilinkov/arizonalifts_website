@@ -7,7 +7,7 @@
 
 button {
     padding: 0.8rem 1.5rem;
-    background-color: #f3c198;
+    background-color: #FFB6C1;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -18,8 +18,7 @@ button {
 
   button:hover,
   button:active {
-    background-color: #f4a261;
-    border-color: #f4a261;
+    background-color: #fea4b2;
   }
 
 </style>
