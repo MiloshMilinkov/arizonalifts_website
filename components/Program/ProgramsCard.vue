@@ -64,7 +64,8 @@ function goToDocs(url) {
     padding: 0;
     text-align: left;
     margin-bottom: 1.5rem;
-    line-height: 1.4;
+    line-height: 2;
+    font-size: 1.5rem;
   }
 
   .feature-icon.availableFeature {
@@ -75,7 +76,7 @@ function goToDocs(url) {
   }
 
   .plan-price {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin-top: 1rem;
@@ -89,10 +90,27 @@ function goToDocs(url) {
     background-color: #f4a261;
     color: #fff;
     padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transform: rotate(-10deg);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    .plan-title {
+      font-size: 1.2rem;
+    }
+    .plan-features {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .plan-price {
+      font-size: 1.6rem;
+    }
+    .ribbon {
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+    }
   }
 </style>

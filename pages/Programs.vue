@@ -138,5 +138,20 @@
     margin-right: auto;
     text-align: left;
   }
+  @media (max-width: 768px) {
+    .pricing-section {
+      padding: 2rem 1rem;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .plans-wrapper {
+      gap: 1rem;
+    }
+    .notes {
+      font-size: 0.9rem;
+    }
+  }
+
 </style>
   
