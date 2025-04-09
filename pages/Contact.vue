@@ -1,4 +1,15 @@
 <template>
+    <section class="information-section">
+    <div class="info-card">
+      <h1>KONTAKT</h1>
+      <p>Kristina Arizanović</p>
+      <p>arizonaliftsmail@gmail.com</p>
+      <div class="social-media-container">
+        <a href="https://www.instagram.com/arizonalifts/" class="social-media-icon"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
+        <a href="https://www.tiktok.com/@arizonalifts" class="social-media-icon"><font-awesome-icon :icon="['fab', 'tiktok']" /></a>
+      </div>
+    </div>
+    </section>
     <section class="contact-section">
         <BaseCard class="contact-card">
             <h1>AKO IMAŠ NEKO PITANJE</h1>
@@ -28,7 +39,7 @@
   
 <script setup>
   import { ref } from 'vue'
-  
+ 
   const form = ref({
     name: '',
     email: '',
@@ -70,11 +81,11 @@
 </script>
   
 <style scoped>
-  .contact-section {
+  .contact-section, .information-section {
     padding: 4rem 1rem;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -116,6 +127,31 @@
   .error {
     color: red;
     margin-top: 1rem;
+  }
+  .info-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-card h1{
+    font-size: 2.5rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .info-card p {
+    font-size: 2rem;
+    margin: 0  auto;
+    margin-bottom: 3rem;
+  }
+  .social-media-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .social-media-icon{
+    text-decoration: none;
+    font-size: 5rem;
+    color: #FFB6C1;;
   }
 </style>
   
