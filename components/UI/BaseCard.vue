@@ -10,7 +10,7 @@
     border-radius: 8px;
     width: 400px;
     padding: 2rem 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     position: relative;
     display: flex;

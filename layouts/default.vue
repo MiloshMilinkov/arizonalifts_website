@@ -26,7 +26,7 @@
     min-height: 100vh;
   }
   .renderedViews{
-    margin-top: 4rem; 
+    margin-top: 3.5rem; 
     flex: 1;
   }
   .fade-enter-from,

@@ -46,13 +46,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
     box-shadow: 0 5px 4px rgba(0,0,0,0.1);
+    height: 3.5rem;
   }
 
   .navbar-logo h1 {
-    margin: 0;
-    font-size: 3rem;
+    margin-left: 1rem;
+    font-size: 2rem;
     color: #80CED6;
     text-shadow: 0 4px 4px rgba(0,0,0,0.25);
   }
@@ -78,7 +78,7 @@
     color: white; 
     text-decoration: none;
     font-weight:bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background 0.3s ease, color 0.3s ease;
@@ -146,8 +146,8 @@
       display: flex;
     }
     .navbar-logo h1 {
-    margin: 0;
-    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
     color: #80CED6;
     text-shadow: 0 3px 3px rgba(0,0,0,0.3);
     }

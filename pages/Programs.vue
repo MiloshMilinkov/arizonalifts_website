@@ -1,12 +1,11 @@
 <template>
     <section class="pricing-section">
-      <h1 class="title">CENOVNIK ONLINE MENTORSTVA</h1>
+      <h1 class="title">Paketi online mentorstva</h1>
       <div class="plans-wrapper">
         <ProgramsCard
           v-for="plan in onlinePlans"
           :key="plan.id"
           :title="plan.title"
-          :price="plan.price"
           :features="plan.features"
           :ribbon="plan.ribbon"
         />
@@ -17,7 +16,7 @@
         <p>**Članarina u teretani nije uključena.</p>
       </div>
   
-      <h1 class="title">CENOVNIK PERSONALNIH MENTORSTVA</h1>
+      <h1 class="title">Paketi personalnih mentorstva</h1>
       <div class="plans-wrapper">
         <ProgramsCard
           v-for="plan in inPersonPlans"
@@ -114,9 +113,9 @@
   
   .title {
     font-size: 2.5rem;
+    margin-top: 0rem;
     margin-bottom: 2rem;
     color: #80CED6;
-    text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
     text-shadow: 2px 2px #5399a1;

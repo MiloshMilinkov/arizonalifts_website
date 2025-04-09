@@ -102,8 +102,9 @@ const submitForm = async () => {
 }
 
 .info-card p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .social-media-container {
@@ -114,7 +115,7 @@ const submitForm = async () => {
 
 .social-media-icon {
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #FFB6C1;
 }
 
@@ -178,7 +179,7 @@ button {
 @media (max-width: 768px) {
   .information-section {
     padding: 1rem;
-    min-height: 50vh; /* Adjusted for smaller screens */
+    min-height: 50vh;
   }
 
   .info-card h1 {

@@ -65,7 +65,7 @@ function goToDocs(url) {
     text-align: left;
     margin-bottom: 1.5rem;
     line-height: 2;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .feature-icon.availableFeature {
@@ -76,7 +76,7 @@ function goToDocs(url) {
   }
 
   .plan-price {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #333;
     margin-top: 1rem;
