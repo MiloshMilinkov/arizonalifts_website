@@ -17,7 +17,7 @@
       </li>
     </ul>
     <p v-if="price" class="plan-price">{{ price }}</p>
-    <BaseButton @click="goToDocs(docsUrl)">PRIJAVI SE</BaseButton>
+    <BaseButton @click="goToDocs(docsUrl)" class="btn">PRIJAVI SE</BaseButton>
   </BaseCard>
 </template>
 
@@ -55,7 +55,7 @@ function goToDocs(url) {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #80CED6;
+    color: #4E4E50;
   }
 
   .plan-features {
@@ -87,7 +87,7 @@ function goToDocs(url) {
     position: absolute;
     top: -5px;
     left: -10px;
-    background-color: #FFB6C1;
+    background-color: #A8BBA3;
     color: #fff;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
@@ -95,6 +95,10 @@ function goToDocs(url) {
     transform: rotate(-10deg);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+  }
+
+  .btn{
+    font-weight: bold;
   }
 
   @media (max-width: 768px) {
