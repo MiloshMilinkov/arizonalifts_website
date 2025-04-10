@@ -18,11 +18,13 @@
   
 <style scoped>
     .footer {
-        background-color: #F4E1D2;
+        background-color: #5f5f61; 
         color: #e76f51;
         text-align: center;
         padding: 1rem 0;
         width: 100%;
+        box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.1);
+        height: 7rem;
     }
     .footer-links {
         display: flex;
@@ -41,11 +43,11 @@
         transition: color 0.3s;
         cursor: pointer;
         font-size: 1.2rem;
-        padding-left: 1rem;
     }
     .footer-links li a {
         text-decoration: none;
-        color: #f4a261;
+        color: white;
+        font-weight: bold;
     }
 
     .footer-links li a:hover {
@@ -54,16 +56,21 @@
 
     .footer-bottom p {
         font-size: 0.8rem;
-        color: #6d6d6d;
+        color: #80CED6;
     }
     
     .footer-bottom a {
-        color: #f4a261;
+        color: #FFB6C1;
         text-decoration: none;
     }
 
     .footer-bottom a:hover {
         text-decoration: underline;
     }
+    @media (max-width: 768px) {
+    .footer-bottom p {
+        font-size: 0.6rem;
+    }
+  }
   </style>
   
