@@ -18,8 +18,7 @@
   
 <style scoped>
     .footer {
-        background-color: #5f5f61; 
-        color: #e76f51;
+        background-color: #FFDAB9;
         text-align: center;
         padding: 1rem 0;
         width: 100%;
@@ -39,7 +38,6 @@
 
     .footer-links li {
         margin: 0.3rem 0;
-        color: #f4a261;
         transition: color 0.3s;
         cursor: pointer;
         font-size: 1.2rem;

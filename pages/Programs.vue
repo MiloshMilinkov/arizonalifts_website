@@ -109,16 +109,16 @@
 <style scoped>
   .pricing-section {
     padding: 4rem 1rem;
+    background: linear-gradient(135deg, #A1C6EA 0%, #FFB6C1 90%);
   }
   
   .title {
     font-size: 2.5rem;
     margin-top: 0rem;
     margin-bottom: 2rem;
-    color: #80CED6;
     letter-spacing: 1px;
     text-align: center;
-    text-shadow: 2px 2px #5399a1;
+
   }
   
   .plans-wrapper {

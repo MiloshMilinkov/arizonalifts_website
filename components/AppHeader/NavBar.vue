@@ -3,11 +3,11 @@
     <div class="navbar-logo">
       <h1>ARIZONA<span>LIFTS</span></h1>
     </div>
-
     <div class="navbar-desktop">
       <div class="navbar-links">
         <NuxtLink to="/" class="nav-link">Početna</NuxtLink>
         <NuxtLink to="/programs" class="nav-link">Programi</NuxtLink>
+        <NuxtLink to="/nutrition" class="nav-link">Ishrana</NuxtLink>
         <NuxtLink to="/about" class="nav-link">O Meni</NuxtLink>
         <NuxtLink to="/contact" class="nav-link">Kontakt</NuxtLink>
       </div>
@@ -22,6 +22,7 @@
       <div class="mobile-menu" v-if="showMobileMenu">
         <NuxtLink to="/" class="mobile-link">Početna</NuxtLink>
         <NuxtLink to="/programs" class="mobile-link">Programi</NuxtLink>
+        <NuxtLink to="/nutrition" class="mobile-link">Ishrana</NuxtLink>
         <NuxtLink to="/about" class="mobile-link">O Meni</NuxtLink>
         <NuxtLink to="/contact" class="mobile-link">Kontakt</NuxtLink>
       </div>
@@ -41,25 +42,23 @@
   .navbar {
     position: fixed;
     width: 100vw;
-    background: #5f5f61; 
+    background: #FFDAB9; 
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 5px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     height: 3.5rem;
   }
 
   .navbar-logo h1 {
     margin-left: 1rem;
     font-size: 2rem;
-    color: #80CED6;
-    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    color: #A1C6EA;
   }
   
   .navbar-logo h1 span {
     color: #FFB6C1;
-    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
   }
 
   .navbar-desktop {
@@ -86,13 +85,11 @@
   }
 
   .nav-link:hover {
-    background: #FFB6C1;
-    color: #fff;
+    background: linear-gradient(180deg, #FFDAB9 0%, #FFB6C1 150%);
   }
 
-  .nav-link.router-link-active, .mobile-link.router-link-active  {
-    background: #FFB6C1;
-    color: #fff;
+  .nav-link.router-link-active, .nav-link.router-link-active  {
+    background: linear-gradient(180deg, #FFDAB9 0%, #FFB6C1 150%);
   }
 
   .navbar-mobile {
@@ -118,16 +115,16 @@
   }
 
   .mobile-menu {
-    background: #D6D6D6;
+    background: #FFDAB9; 
     position: absolute;
     top: 100%;
-    right: 1rem;
-    border-radius: 5px;
+    right: 0rem;
+    border-radius: 0px 0px 5px 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     padding: 0.5rem 0;
-    z-index: 998;
+    z-index: 999;
   }
 
   .mobile-link {
@@ -155,5 +152,8 @@
       color: #FFB6C1;
       text-shadow: 0 3px 3px rgba(0,0,0,0.3);
     }
+    .mobile-link:hover, .mobile-link.router-link-active, .mobile-link.router-link-active  {
+      background: linear-gradient(180deg, #FFDAB9 0%, #FFB6C1 150%);
+     }
   }
 </style>

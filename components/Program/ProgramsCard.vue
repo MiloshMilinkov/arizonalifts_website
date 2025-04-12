@@ -55,7 +55,6 @@ function goToDocs(url) {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #4E4E50;
   }
 
   .plan-features {
@@ -78,7 +77,6 @@ function goToDocs(url) {
   .plan-price {
     font-size: 1.7rem;
     font-weight: bold;
-    color: #333;
     margin-top: 1rem;
     text-align: center;
   }
@@ -87,7 +85,7 @@ function goToDocs(url) {
     position: absolute;
     top: -5px;
     left: -10px;
-    background-color: #A8BBA3;
+    background-color: #FFDAB9;
     color: #fff;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;

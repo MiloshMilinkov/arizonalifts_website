@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #D6D6D6
+    color: #4A4A4A;
   }
 
   #app {
