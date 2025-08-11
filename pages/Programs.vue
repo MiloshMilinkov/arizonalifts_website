@@ -8,6 +8,8 @@
           :title="plan.title"
           :features="plan.features"
           :ribbon="plan.ribbon"
+          :price="plan.price"         
+          :docs-url="plan.docsUrl"    
         />
       </div>
   
@@ -23,6 +25,8 @@
           :key="plan.id"
           :title="plan.title"
           :features="plan.features"
+          :price="plan.price"         
+          :docs-url="plan.docsUrl"   
         />
       </div>
     </section>
@@ -44,7 +48,8 @@
         { name: 'Prilagođavanje plana po potrebi', available: false },
         { name: '1 trening uživo mesečno', available: false }
       ],
-      ribbon: ''
+      ribbon: '',
+      docsUrl: '/contact'
     },
     {
       id: 'online-standard',
@@ -60,7 +65,8 @@
         { name: 'Prilagođavanje plana po potrebi', available: true },
         { name: '1 trening uživo mesečno', available: false }
       ],
-      ribbon: 'NAJPOPULARNIJE'
+      ribbon: 'NAJPOPULARNIJE',
+      docsUrl: '/contact'
     },
     {
       id: 'online-premium',
@@ -76,7 +82,8 @@
         { name: 'Prilagođavanje plana po potrebi', available: true },
         { name: '1 trening uživo mesečno', available: true }
       ],
-      ribbon: 'NAJBOLJA PONUDA'
+      ribbon: 'NAJBOLJA PONUDA',
+      docsUrl: '/contact'
     }
   ];
   
@@ -90,7 +97,8 @@
         { name: '10 treninga mesečno - 14000RSD' },
         { name: '12 treninga mesečno - 16800RSD \n BONUS: Priručnik o ishrani (100+ recepata, jelovnici sa različitim kalorijskim unosom)' },
         { name: '16 treninga mesečno - 22400RSD \n BONUS: Priručnik o ishrani (100+ recepata, jelovnici sa različitim kalorijskim unosom)' },
-      ]
+      ],
+      docsUrl: '/contact'
     },
     {
       id: 'inPerson-polupersonalni',
@@ -101,7 +109,8 @@
         { name: '10 treninga mesečno - 7000RSD (po osobi)' },
         { name: '12 treninga mesečno - 8400RSD (po osobi)' },
         { name: '16 treninga mesečno - 11200RSD (po osobi)' },
-      ]
+      ],
+      docsUrl: '/contact'
     }
   ];
 </script>
